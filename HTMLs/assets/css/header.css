@@ -1,0 +1,25 @@
+/* ### header box ### */
+.headerBox { padding: 35px 0; position: fixed; left: 0; top: 0; transition: all 0.3s; width: 100%; z-index: 9; }
+.headerBox--fixed { padding: 15px 0; box-shadow: 0 0 10px rgba(0,0,0,0.5); background: rgba(255,255,255,0.9); }
+
+.menuBox {  }
+.menuBox__menu { display: flex; align-items: center; }
+.menuBox__menu > li { padding: 10px 37px; list-style-type: none; }
+.menuBox__menu > li > a { display: inline-block; text-decoration: none; color: #158181; font-size: 18px; line-height: 136.2%; font-weight: 600; }
+.menuBox__menu > li:last-child { padding-right: 0; }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 992px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 480px) {
+}

@@ -1,0 +1,33 @@
+/* ### banner box ### */
+.bannerBox { padding: 106px 0 0; min-height: 100vh; position: relative; width: 100%; background: url(../images/banner-bg.jpg) center top no-repeat; }
+.bannerBox__title { font-weight: 700; font-size: 70px; line-height: 106.2%; color: #17B5B5; }
+
+.bannerBox__left { position: absolute; left: 50%; top: 0; padding-top: 215px; margin-left: -760px; width: 720px; height: 100%; z-index: 2; }
+.bannerBox__left::after { content: ""; position: absolute; left: 0; bottom: -95px; height: 218px; width: 85px; background: url(../images/banner-side-pattern.png) center center no-repeat; }
+.bannerBox__right { margin-left: auto; width: 1166px; position: relative; }
+.bannerBox__mask { position: absolute; left: -1px; top: -1px; width: 100%; z-index: 1; }
+
+.bannerBox__slider { margin-bottom: 0 !important; }
+.bannerBox__slider .slick-dots { display: flex; align-items: center; bottom: auto; left: -550px; top: 55.5%; width: auto; z-index: 2; }
+.bannerBox__slider .slick-dots li { margin: 0 61px 0 0; height: auto; width: auto; }
+.bannerBox__slider .slick-dots li button { color: #FFA6AB; height: auto; width: auto; }
+.bannerBox__slider .slick-dots li button:before { position: static; font-family: 'icomoon' !important; color: #FFA6AB; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; font-size: 20px; line-height: 1; opacity: 1; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; content: "\e909"; }
+.bannerBox__slider .slick-dots li:first-child button::before { content: "\e90a"; font-size: 30px; }
+.bannerBox__slider .slick-dots li:nth-child(3n) button::before { content: "\e90b"; font-size: 30px; }
+.bannerBox__slider .slick-dots li.slick-active button::before { color: #FF4A55; }
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 992px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 480px) {
+}

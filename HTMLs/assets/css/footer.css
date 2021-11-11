@@ -1,0 +1,32 @@
+/* ### footer box ### */
+.footerBox { padding: 80px 0 0; width: 100%; color: #fff; background: #FF4A55; }
+.footerBox__menu { margin-bottom: 60px; list-style-type: none; }
+.footerBox__menu > li { padding: 10px 0; font-weight: 600; font-size: 25px; line-height: 136.2%; color: #FFFFFF; }
+.footerBox__menu > li > a { font-size: 18px; text-decoration: none; color: #fff; font-weight: 400; }
+
+.footerBox__copyright { padding: 20px; text-align: center; background: #E0323C; }
+
+.footerBox__logo { margin-bottom: 70px; }
+.footerBox__contact { margin-bottom: 20px; font-weight: 500; font-size: 25px; line-height: 87.2%; letter-spacing: 0.03em; color: #FFFFFF; }
+.footerBox__contact > a { text-decoration: none; color: #fff; font-weight: 700; }
+
+.footerBox__social { margin-bottom: 70px; list-style-type: none; display: flex; }
+.footerBox__social > li { padding: 10px; }
+.footerBox__social > li:first-child { padding-left: 0; }
+.footerBox__social > li > a { font-size: 54px; display: flex; align-items: center; color: #fff; text-decoration: none;}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 1200px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 992px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 480px) {
+}

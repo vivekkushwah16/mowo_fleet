@@ -271,7 +271,7 @@ html { scroll-behavior: smooth; }
 .bold-text { font-weight: 700; }
 
 /* Buttons Styling */
-.btn { text-decoration: none; padding: 12px 20px; text-align: center; display: inline-block; cursor: pointer; font-family: 'Montserrat', sans-serif; white-space: nowrap; font-size: 16px; line-height: 16px; font-weight: 700; border-radius: 10px; border: medium none; border: 1px solid; }
+.btn { text-decoration: none; padding: 25px 50px; text-align: center; display: inline-block; cursor: pointer; font-family: 'Montserrat', sans-serif; white-space: nowrap; font-size: 24px; line-height: 16px; font-weight: 700; border-radius: 35px; border: medium none; border: 1px solid; }
 .btn.btn-block { display: block; width: 100%; }
 .btn.btn-lg { padding: 25px 50px; font-size: 24px; border-radius: 35px; }
 .btn.btn-sm { padding: 15px 20px; }
@@ -284,8 +284,8 @@ html { scroll-behavior: smooth; }
 .slider-btn { position: absolute; top: 50%; margin-top: -34px; cursor: pointer; display: flex; align-items: center; color: #000000; font-weight: 700; font-size: 22px; border: medium none; background: transparent; z-index: 20; }
 .slider-btn__icon { height: 68px; width: 68px; display: flex; align-items: center; font-size: 28px; justify-content: center; color: #fff; border-radius: 50%; background: #FF4A55; border: 2px solid #FF4A55; }
 .slider-btn__title { display: inline-block; padding: 0 16px; } 
-.slider-btn.slider-btn--prev { left: 50px; }
-.slider-btn.slider-btn--next { right: 50px; }
+.slider-btn.slider-btn--prev { left: 0px; }
+.slider-btn.slider-btn--next { right: 0px; }
 .slider-btn:focus { outline: none; }
 .slider-btn:hover .slider-btn__title { color: #FF4A55;  }
 .slider-btn:hover .slider-btn__icon { background: #fff; color: #FF4A55; }
@@ -601,9 +601,19 @@ html { scroll-behavior: smooth; }
   .lh-sm-40 { line-height: 40px !important; }
 }
 
+@media only screen and (max-width: 1560px) {
+  .container { max-width: 1266px; }
+}
+
 @media only screen and (max-width: 1439px) {
-  .slider-btn.slider-btn--prev { margin-left: 2%; }
-  .slider-btn.slider-btn--next { margin-right: 2%; }
+  .container { max-width: 1110px; }
+}
+
+@media only screen and (max-width: 1109px) {
+  .container { max-width: 696px; }
+  .btn { padding: 12px 20px; font-size: 16px; border-radius: 20px; }
+  .slider-btn__icon { height: 30px; width: 30px; font-size: 18px; }
+  
 }
 
 /* Iphone 11 above */

@@ -48,11 +48,15 @@
                 </a>
                 <!--  / menu box \ -->
                 <nav class="menuBox">
-                    <ul class="menuBox__menu">
-                        <li><a href="#blockWork">Our Work</a></li>
-                        <li><a href="#blockSocial">MOWO Social Initiative</a></li>
-                        <li><a href="#blockAbout">About Us</a></li>
-                    </ul>
+                    <button class="menuBox__button"><i class="icon-menu"></i></button>
+                    <div class="menuBox__menu">
+                        <button class="menuBox__button menuBox__button--close"><i class="icon-close"></i></button>
+                        <ul>
+                            <li><a href="#blockWork">Our Work</a></li>
+                            <li><a href="#blockSocial">MOWO Social Initiative</a></li>
+                            <li><a href="#blockAbout">About Us</a></li>
+                        </ul>
+                    </div>
                 </nav>
                 <!--  \ menu box / -->
             </div>
@@ -65,13 +69,8 @@
 
         <!--  / banner box \ -->
         <article class="bannerBox">
-            <div class="container">
-                <div class="bannerBox__left">
-                    <h1 class="bannerBox__title">Creating a generation of confident women in mobility</h1>
-                </div>
-            </div>
             <div class="bannerBox__right">
-                <img src="assets/images/banner-mask2.png" alt="" class="bannerBox__mask">
+                <!-- <img src="assets/images/banner-mask2.png" alt="" class="bannerBox__mask"> -->
                 <div class="bannerBox__slider fade">
                     <div class="bannerBox__slider-item">
                         <img src="assets/images/slider-pic1.jpg" alt="">
@@ -87,20 +86,31 @@
                     </div>
                 </div>
             </div>
+            <div class="bannerBox__left">
+                <h1 class="bannerBox__title">Creating a generation of confident women in mobility</h1>
+                <div class="myVideoBanner">
+                    <video autoplay muted loop>
+                        <source src="assets/videos/rain.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>    
+                </div>
+            </div>
         </article>
         <!--  \ banner box / -->
         
         <!--  / about box \ -->
         <article class="aboutBox" style="background-image: url(assets/images/about-bg.jpg);">
-            <video autoplay muted loop id="myVideo">
-                <source src="assets/videos/rain.mp4" type="video/mp4">
-                Your browser does not support HTML5 video.
-            </video>
-            <img src="assets/images/about-overlay.png" class="aboutBox__overlay" alt="">
-            <div class="container">
-                <div class="aboutBox__text">
-                    <h2 class="aboutBox__title">What is MOWO Fleet?</h2>
-                    <p class="aboutBox__desc">Having women change things from the inside is a way to transform broken systems.  Our Fleet is <strong>MOWO</strong> - MOving WOmen and we are building a tech enabled Women-only Fleet.  This fleet will provide a mix of deliveries and women only on-demand taxi services.</p>
+            <div class="aboutBox__inner">
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/videos/rain.mp4" type="video/mp4">
+                    Your browser does not support HTML5 video.
+                </video>
+                <img src="assets/images/about-overlay.png" class="aboutBox__overlay" alt="">
+                <div class="container">
+                    <div class="aboutBox__text">
+                        <h2 class="aboutBox__title">What is MOWO Fleet?</h2>
+                        <p class="aboutBox__desc">Having women change things from the inside is a way to transform broken systems.  Our Fleet is <strong>MOWO</strong> - MOving WOmen and we are building a tech enabled Women-only Fleet.  This fleet will provide a mix of deliveries and women only on-demand taxi services.</p>
+                    </div>
                 </div>
             </div>
         </article>
@@ -108,62 +118,67 @@
 
         <!--  / story box \ -->
         <article class="storyBox" id="blockWork">
-            <div class="container">
-                <div class="storyBox__slider-wrapper">
-                    <div>
-                        <div class="d-flex">
-                            <div class="storyBox__text">
-                                <h2 class="storyBox__title">Stories of Women in <br><strong>MOWO</strong></h2>
-                                <div class="storyBox__text-inner">
-                                    <p class="storyBox__desc">“Today, I have the job I love, I am recognized for what I do, and I get to contribute financially”, she says with conviction, and adds, “I truly believe women shouldn’t have to depend on anyone. They deserve their freedom. And they belong on two-wheels”.</p>
-                                    <p class="storyBox__desc storyBox__desc--right"><strong>Punyawati</strong> - First Mowo Fleet Driver</p>
+            <div class="storyBox__top">
+                <div class="container">
+                    <div class="storyBox__slider-wrapper">
+                        <div>
+                            <div class="d-flex">
+                                <div class="storyBox__text">
+                                    <h2 class="storyBox__title">Stories of Women in <br><strong>MOWO</strong></h2>
+                                    <div class="storyBox__text-inner">
+                                        <p class="storyBox__desc">“Today, I have the job I love, I am recognized for what I do, and I get to contribute financially”, she says with conviction, and adds, “I truly believe women shouldn’t have to depend on anyone. They deserve their freedom. And they belong on two-wheels”.</p>
+                                        <p class="storyBox__desc storyBox__desc--right"><strong>Punyawati</strong> - First Mowo Fleet Driver</p>
+                                    </div>
                                 </div>
+                                <div class="storyBox__slider">
+                                    <!-- <img src="assets/images/story-mask.png" class="storyBox__slider-mask" alt=""> -->
+                                    <img src="assets/images/small-slide1.jpg" alt="">
+                                </div>    
                             </div>
-                            <div class="storyBox__slider">
-                                <img src="assets/images/story-mask.png" class="storyBox__slider-mask" alt="">
-                                <img src="assets/images/small-slide1.jpg" alt="">
-                            </div>    
                         </div>
-                    </div>
-                    <div>
-                        <div class="d-flex">
-                            <div class="storyBox__text">
-                                <h2 class="storyBox__title">Stories of Women in <br><strong>MOWO</strong></h2>
-                                <div class="storyBox__text-inner">
-                                    <p class="storyBox__desc">“Today, I have the job I love, I am recognized for what I do, and I get to contribute financially”, she says with conviction, and adds, “I truly believe women shouldn’t have to depend on anyone. They deserve their freedom. And they belong on two-wheels”.</p>
-                                    <p class="storyBox__desc storyBox__desc--right"><strong>Punyawati</strong> - First Mowo Fleet Driver</p>
+                        <div>
+                            <div class="d-flex">
+                                <div class="storyBox__text">
+                                    <h2 class="storyBox__title">Stories of Women in <br><strong>MOWO</strong></h2>
+                                    <div class="storyBox__text-inner">
+                                        <p class="storyBox__desc">“Today, I have the job I love, I am recognized for what I do, and I get to contribute financially”, she says with conviction, and adds, “I truly believe women shouldn’t have to depend on anyone. They deserve their freedom. And they belong on two-wheels”.</p>
+                                        <p class="storyBox__desc storyBox__desc--right"><strong>Punyawati</strong> - First Mowo Fleet Driver</p>
+                                    </div>
                                 </div>
+                                <div class="storyBox__slider">
+                                    <!-- <img src="assets/images/story-mask.png" class="storyBox__slider-mask" alt=""> -->
+                                    <img src="assets/images/small-slide1.jpg" alt="">
+                                </div>    
                             </div>
-                            <div class="storyBox__slider">
-                                <img src="assets/images/story-mask.png" class="storyBox__slider-mask" alt="">
-                                <img src="assets/images/small-slide1.jpg" alt="">
-                            </div>    
                         </div>
                     </div>
-                </div>
-
-                <div class="d-flex align-items-center mg-b100">
-                    <div class="storyBox__donate">
-                        <img src="assets/images/donate-pic.jpg" alt="">
-                    </div>    
-                    <div class="storyBox__text">
-                        <div class="storyBox__text-inner">
-                            <h2 class="storyBox__title">Donate - <br>Funds</h2>
-                            <p class="storyBox__desc">At MOWO we are working towards securing more funding to support our work. Your contribution can go towards supporting women to embark towards their journey of self-reliance. A contribution of Rs. 2000/- supports the training cost of one woman.</p>
-                            <a href="#" class="btn btn-lg btn-primary">DONATE</a>
+    
+                    <div class="d-flex align-items-center justify-content-between mg-b100 mg-sm-b0 mg-md-b50">
+                        <a href="#" class="storyBox__donate">
+                            <img src="assets/images/donate-pic.jpg" alt="">
+                        </a>
+                        <div class="storyBox__text">
+                            <div class="storyBox__text-inner">
+                                <h2 class="storyBox__title">Donate - <br>Funds</h2>
+                                <p class="storyBox__desc">At MOWO we are working towards securing more funding to support our work. Your contribution can go towards supporting women to embark towards their journey of self-reliance. A contribution of Rs. 2000/- supports the training cost of one woman.</p>
+                                <a href="#" class="btn btn-primary">DONATE</a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="pd-t100 d-flex align-items-center">
-                    <div class="storyBox__text">
-                        <h2 class="storyBox__sub-title"><strong>MOWO</strong> Social <br>Initiatives Foundation</h2>
-                        <p class="storyBox__desc">MOWO (Moving Women) started with the belief that mobility offers women freedom and empowerment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. non sed.</p>
-                        <a href="#" class="btn btn-lg btn-secondary">KNOW MORE</a>
-                    </div>
-                    <div class="storyBox__logo">
-                        <img src="assets/images/logo-social.png" alt="">
                     </div>    
+                </div>
+            </div>
+            <div class="storyBox__bottom">
+                <div class="container">
+                    <div class="pd-t100 pd-md-t50 pd-sm-t0 d-flex align-items-center">
+                        <div class="storyBox__text">
+                            <h2 class="storyBox__sub-title"><strong>MOWO</strong> Social <br>Initiatives Foundation</h2>
+                            <p class="storyBox__desc">MOWO (Moving Women) started with the belief that mobility offers women freedom and empowerment. Lorem ipsum dolor sit amet, consectetur adipiscing elit. non sed.</p>
+                            <a href="#" class="btn btn-secondary">KNOW MORE</a>
+                        </div>
+                        <div class="storyBox__logo">
+                            <img src="assets/images/logo-social.png" alt="">
+                        </div>    
+                    </div>
                 </div>
             </div>
         </article>
@@ -175,14 +190,14 @@
                 <h2 class="meetBox__title">Meet Our Team</h2>
 
                 <ul class="meetBox__tabs">
-                    <li class="active"><a href="#">FOUNDERS</a></li>
-                    <li><a href="#">TEAMS</a></li>
+                    <li><a id="tab1" href="javascript:void(0)">FOUNDERS</a></li>
+                    <li><a class="inactive" id="tab2" href="javascript:void(0)">TEAMS</a></li>
                 </ul>
 
-                <div class="meetBox__team">
+                <div class="meetBox__team active" id="tab1C">
                     <div class="team-item">
                         <div class="team-item__pic">
-                            <img class="picture" src="assets/images/team-member1.png" alt="">
+                            <img class="picture" src="assets/images/team-member1.jpg" alt="">
                         </div>
                         <div class="team-item__text">
                             <h3 class="team-item__title">SHRISHTI Bakshi</h3>
@@ -191,7 +206,7 @@
                     </div>
                     <div class="team-item">
                         <div class="team-item__pic">
-                            <img class="picture" src="assets/images/team-member2.png" alt="">
+                            <img class="picture" src="assets/images/team-member2.jpg" alt="">
                         </div>
                         <div class="team-item__text">
                             <h3 class="team-item__title">SHRISHTI Bakshi</h3>
@@ -199,6 +214,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="meetBox__team" id="tab2C">
+                    <div class="team-item">
+                        <div class="team-item__pic">
+                            <img class="picture" src="assets/images/team-member2.jpg" alt="">
+                        </div>
+                        <div class="team-item__text">
+                            <h3 class="team-item__title">SHRISHTI Bakshi</h3>
+                            <h3 class="team-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis odio consectetur sagittis netus praesent. Amet viverra nunc ullamcorper senectus purus mattis blandit pulvinar.Amet viverra nunc ullamcorper senectus purus mattis blandit pulvinar.</h3>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-item__pic">
+                            <img class="picture" src="assets/images/team-member1.jpg" alt="">
+                        </div>
+                        <div class="team-item__text">
+                            <h3 class="team-item__title">SHRISHTI Bakshi</h3>
+                            <h3 class="team-item__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis odio consectetur sagittis netus praesent. Amet viverra nunc ullamcorper senectus purus mattis blandit pulvinar.Amet viverra nunc ullamcorper senectus purus mattis blandit pulvinar.</h3>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </article>
         <!--  \ meet box / -->
@@ -212,13 +248,13 @@
                     <div class="initiativeBox__item">
                         <img class="initiativeBox__item-pic" src="assets/images/initiative1.jpg" alt="">
                         <div class="initiativeBox__item-footer">
-                            <a href="#" class="btn btn-lg btn-secondary">VISIT</a>
+                            <a href="#" class="btn btn-secondary">VISIT</a>
                         </div>
                     </div>
                     <div class="initiativeBox__item">
                         <img class="initiativeBox__item-pic" src="assets/images/initiative2.jpg" alt="">
                         <div class="initiativeBox__item-footer">
-                            <a href="#" class="btn btn-lg btn-secondary">VISIT</a>
+                            <a href="#" class="btn btn-secondary">VISIT</a>
                         </div>
                     </div>
                 </div>
@@ -233,65 +269,83 @@
                 <h2 class="newsBox__title">Read our <br>Latest</h2>
                 <div class="d-flex align-items-center justify-content-between">
                     <p class="newsBox__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Viverra aliquet porttitor adipiscing fringilla velit elit vehicula. </p>
-                    <a href="#" class="btn btn-lg btn-secondary">VIEW MORE</a>
+
+                    <div class="newsBox__slider newsBox__slider--mobile">
+                        <div>
+                            <a href="#" class="newsBox__slider-item">
+                                <img src="assets/images/news1.jpg" alt="">
+                                <p>09 Oct. 2021</p>
+                                <h4>GHMC to train women in 2 wheeler riding</h4>
+                            </a>
+                        </div>
+                        <div>
+                            <a href="#" class="newsBox__slider-item">
+                                <img src="assets/images/news2.jpg" alt="">
+                                <p>09 Oct. 2021</p>
+                                <h4>GHMC to train women in 2 wheeler riding</h4>
+                            </a>
+                        </div>
+                    </div>
+        
+                    <a href="#" class="btn btn-secondary">VIEW MORE</a>
                 </div>
             </div>
-            <div class="newsBox__slider">
+            <div class="js-newsBox__slider newsBox__slider">
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news1.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news2.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news3.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news4.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news1.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news2.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news3.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
                 <div>
-                    <div class="newsBox__slider-item">
+                    <a href="#" class="newsBox__slider-item">
                         <img src="assets/images/news4.jpg" alt="">
                         <p>09 Oct. 2021</p>
                         <h4>GHMC to train women in 2 wheeler riding</h4>
-                    </div>
+                    </a>
                 </div>
             </div>
         </article>
@@ -356,7 +410,10 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
+<script type="text/javascript" src="./js/story.js?2"></script>
+
 
 </body>
 </html>

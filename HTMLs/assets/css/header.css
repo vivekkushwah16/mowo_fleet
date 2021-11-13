@@ -1,23 +1,40 @@
 /* ### header box ### */
 .headerBox { padding: 35px 0; position: fixed; left: 0; top: 0; transition: all 0.3s; width: 100%; z-index: 9; }
 .headerBox--fixed { padding: 15px 0; box-shadow: 0 0 10px rgba(0,0,0,0.5); background: rgba(255,255,255,0.9); }
+.menuBox__button-close, 
+.menuBox__button { display: none; }
 
-.menuBox {  }
-.menuBox__menu { display: flex; align-items: center; }
-.menuBox__menu > li { padding: 10px 37px; list-style-type: none; }
-.menuBox__menu > li > a { display: inline-block; text-decoration: none; color: #158181; font-size: 18px; line-height: 136.2%; font-weight: 600; }
-.menuBox__menu > li:last-child { padding-right: 0; }
+.menuBox__menu > ul { display: flex; align-items: center; list-style-type: none; }
+.menuBox__menu > ul > li { padding: 10px 37px; }
+.menuBox__menu > ul > li > a { display: inline-block; text-decoration: none; color: #158181; font-size: 18px; line-height: 136.2%; font-weight: 600; }
+.menuBox__menu > ul > li:last-child { padding-right: 0; }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (max-width: 1200px) {
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1109px) {
+    .menuBox__menu { position: fixed; display: flex; align-items: center; flex-direction: column; left: 0; top: -100%; z-index: 1000; height: 100%; width: 100%; transition: all 0.3s; background: #fff; }
+    .menuBox__menu > ul { flex-direction: column; justify-content: center; height: 100%; }
+    .menuBox__menu.active { top: 0; }
+    .menuBox__menu > ul > li,
+    .menuBox__menu > ul > li:last-child { padding: 50px 30px; display: block; width: 100%; text-align: center; }
+    .menuBox__menu > ul > li > a { color: #EE4751; }
+    .headerBox__logo { width: 172px; }
+    .headerBox { padding: 25px 0; }
+    .headerBox--fixed { padding: 20px 0; }
+    .menuBox__button { padding: 10px; color: #fff; font-size: 20px; display: block; border: none; background: transparent; }
+    .menuBox__button.menuBox__button--close { position: absolute; right: 0; top: 0;  color: #EE4751; }
+    .headerBox--fixed .menuBox__button { color: #EE4751; }
 }
 
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
+    .headerBox { padding: 20px 0; }
+    .headerBox--fixed { padding: 5px 0; }
+    .headerBox__logo { margin-left: 15px; }
+    .menuBox__button { color: #EE4751; }
 }
 
 /* All Mobile Sizes (devices and browser) */

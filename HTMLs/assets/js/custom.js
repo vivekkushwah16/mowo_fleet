@@ -46,6 +46,11 @@ $('.meetBox__tabs > li > a').click(function(){
  }
 });
 
+$('.team-item, .modal-popover__close').on('click', function(){
+  $('.modal-popover').toggleClass('active');
+});
+
+
 $(window).scroll(function() {    
   var scroll = $(window).scrollTop();
   if (scroll >= 1) {
